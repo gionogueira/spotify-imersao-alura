@@ -53,7 +53,7 @@ body {
 .sidebar__library{
     background-color: #121212;
     border-radius: 8px;
-    /* padding: 4px 8px; */
+    padding: 4px 8px;
     gap: 8px;
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,12 @@ body {
     font-size: 14px;
     margin-top: 10px;
     flex-direction: column;
-    padding: 0 8px 8px;
+}
+
+.sidebar__library .library__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar__library .library__button{
@@ -82,21 +87,11 @@ body {
     padding: 20px 10px;
 }
 
-.library__head .fa-plus{
-    color: #b3b3b3;
-    padding: 20px 10px;
-    margin-right: 10px;
-    font-weight: 300;
-    padding-right: 8px;
+.sidebar__library .library__head .fa-plus{
+    margin: 24px 10px;
 }
 
-.library__head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.library__section{
+.library-section{
     background-color: #242424;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
@@ -110,25 +105,25 @@ body {
     line-height: 23px;
 }
 
-.library__section .text-title{
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.library__section .text-subtitle{
-    font-size: 0.8125rem;
-    font-weight: 400;
-}
-
-.library__section .library-text{
+.library-section .library-section__content{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.library__section button{
+.library-section .text-title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.library-section .text-subtitle{
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.library-section button{
     background-color: #fff;
-    border-radius: 9999px;
+    border-radius: 20px;
     border: 0px;
     color: #000;
     text-decoration: none;
@@ -137,4 +132,59 @@ body {
     text-transform: none;
     min-block-size: 32px;
     padding: 4px 16px;
+}
+
+.sidebar .sidebar-links{
+    padding: 0 24px;
+    text-align: start;
+    margin: 32px 0;
+}
+
+.sidebar .sidebar-links .sidebar-links__content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar .sidebar-links a{
+    text-decoration: none;
+    color: #a7a7a7;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.sidebar .sidebar-links a:hover{
+    text-decoration: underline;
+}
+
+.sidebar .sidebar-links span{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic ProN,Meiryo,MS Gothic;
+}
+
+.sidebar .languages{
+    padding: 0 24px;
+    margin-bottom: 32px;
+}
+
+.sidebar .languages .languages_button{
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    text-transform: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 8px 14px;
+    transition-duration:33ms;
+}
+
+.sidebar .languages .languages_button:hover{
+    border: 1px solid #fff;
+    transform: scale(1.04);
 }
