@@ -1,9 +1,10 @@
 body {
     background-color: #000000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
@@ -44,7 +45,6 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 0.97rem;
-    font-family: Arial, Helvetica, sans-serif;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -79,7 +79,6 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 0.97rem;
-    font-family: Arial, Helvetica, sans-serif;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -93,7 +92,6 @@ body {
 
 .library-section{
     background-color: #242424;
-    font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
     padding: 16px 20px;
     color: #fff;
@@ -159,7 +157,6 @@ body {
 .sidebar .sidebar-links span{
     font-size: 11px;
     font-weight: 400;
-    font-family: Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic ProN,Meiryo,MS Gothic;
 }
 
 .sidebar .languages{
@@ -186,5 +183,52 @@ body {
 
 .sidebar .languages .languages_button:hover{
     border: 1px solid #fff;
+    transform: scale(1.04);
+}
+
+.footer__content{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #af2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.footer__content .footer__content-text{
+    flex-shrink: 0;
+}
+
+.footer__content .footer-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer__content .footer-subtitle{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__content button{
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition-duration:33ms;
+}
+
+.footer__content button:hover{
     transform: scale(1.04);
 }
